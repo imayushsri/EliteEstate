@@ -17,7 +17,7 @@ const OurValues = () => {
 
                 {/* Right Side - Accordion with single open item */}
                 <div className="col-md-6 ps-3">
-                    <h2 className="mb-4 mt-3 text-color">Our Core Values</h2>
+                    <h2 className="mb-4 mt-3 text-color fw-bold">Our Core Values</h2>
                     <p>We always ready to help by providing the best services for you.
                         We beleive a good place to live can make your life better.</p>
                     <div style={{ height: '300px', overflowY: 'auto' }}>

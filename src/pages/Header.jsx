@@ -1,11 +1,11 @@
-import { FaHome, FaInfoCircle, FaSearch, FaSignInAlt } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaPhoneAlt, FaSearch, FaSignInAlt } from 'react-icons/fa';
 import { TiUserAdd } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <header className='bg-light shadow position-fixed top-0 w-100 z-3'>
-      <nav className='navbar navbar-expand-sm navbar-light bg-light container px-4'>
+      <nav className='navbar navbar-expand-sm navbar-expand-md navbar-light bg-light container px-4'>
         <Link className='navbar-brand fw-bold fs-5 d-flex align-items-center text-shadow-md' to='/'>
           <span className='text-color'>Elite</span>
           <span className='text-dark'>Estate</span>
@@ -33,6 +33,9 @@ export default function Header() {
             <li className='nav-item'>
               <Link className='nav-link text-secondary d-flex align-items-center gap-1 nav-text' to='/about'><FaInfoCircle /> About</Link>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link text-secondary d-flex align-items-center gap-1 nav-text' to='/contact'><FaPhoneAlt /> Contact</Link>
+            </li>
           </ul>
 
           {/* Search Form */}
@@ -54,7 +57,7 @@ export default function Header() {
               <Link className='nav-link text-secondary text-nowrap d-flex align-items-center gap-1 nav-text' to='/signin'><FaSignInAlt /> Sign in</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link text-secondary text-nowrap d-flex align-items-center gap-1 nav-text' to='/signin'><TiUserAdd className='fs-5'/> Sign up</Link>
+              <Link className='nav-link text-secondary text-nowrap d-flex align-items-center gap-1 nav-text' to='/signup'><TiUserAdd className='fs-5'/> Sign up</Link>
             </li>
           </ul>
         </div>
