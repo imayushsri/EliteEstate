@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="row text-center text-md-start">
                     {/* Brand */}
                     <div className="col-md-4 mb-3">
-                        <h5 className="fw-bold text-color"><span className="">Elite</span>Estate</h5>
+                        <h5 className="fw-bold text-dark"><span className="text-color">Elite</span>Estate</h5>
                         <p className="small text-muted ">
                             Helping you find the perfect property
                             <br />for rent or for sale — with ease and trust.

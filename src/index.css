@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f9fafb;
+  overflow-x: hidden;
 }
 :root{
     --text-color : #0056b3;
@@ -69,6 +70,20 @@ body {
     border: 1px solid var(--text-color) !important;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
+}
+/* Contact */
+textarea{
+    resize: none;
+}
+form .form-control {
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+form .form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
 }
 
 /* footer */
