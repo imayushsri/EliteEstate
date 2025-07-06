@@ -9,13 +9,27 @@ import 'aos/dist/aos.css';
 import Typewriter from 'typewriter-effect';
 import ListingItem from '../components/ListingItem';
 import OurValues from '../components/OurValues';
+import Testimonial from '../components/Testimonial';
 
-// ✅ Static sample data
+const slider = [
+    {
+        _id: '1',
+        imageUrls: ['images/slide1.jpg'],
+    },
+    {
+        _id: '2',
+        imageUrls: ['images/slide2.jpg'],
+    },
+    {
+        _id: '3',
+        imageUrls: ['images/slide3.jpg'],
+    },
+]
 const offerListings = [
     {
         _id: '1',
         name: 'Modern Apartment',
-        imageUrls: ['https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg'],
+        imageUrls: ['images/slide1.jpg'],
         price: 1200,
         location: 'New Delhi',
         type: 'rent',
@@ -23,7 +37,7 @@ const offerListings = [
     {
         _id: '2',
         name: 'Luxury Villa',
-        imageUrls: ['https://images.pexels.com/photos/8082219/pexels-photo-8082219.jpeg'],
+        imageUrls: ['images/slide2.jpg'],
         price: 250000,
         location: 'Mumbai',
         type: 'sale',
@@ -130,14 +144,17 @@ export default function Home() {
                     }}
                     loop={true}
                     pagination={{ clickable: true }}
+                    style={{ height: '40vw' }}
                 >
-                    {offerListings.map((listing) => (
+                    {slider.map((listing) => (
                         <SwiperSlide key={listing._id}>
                             <div
                                 className="w-100"
                                 style={{
-                                    height: '85vh',
-                                    background: `url(${listing.imageUrls[0]}) center center / cover no-repeat`,
+                                    height: '40vw',
+                                    width: '100%',
+                                    background: `url(${listing.imageUrls[0]}) center no-repeat`,
+                                    backgroundSize: 'contain',
                                 }}
                             ></div>
                         </SwiperSlide>
@@ -195,6 +212,9 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
+            </div>
+            <div data-aos="fade-up">
+                <Testimonial />
             </div>
         </div>
     );
