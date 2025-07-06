@@ -169,7 +169,7 @@ const Signup = () => {
 
               <div className='col-md-6'>
                 <label className='form-label fw-semibold'>Country</label>
-                <div className='input-group'>
+                <div className='input-group form-input'>
                   <div className='w-100'>
                     <Select
                       options={countryOptions}
@@ -177,7 +177,15 @@ const Signup = () => {
                       onChange={handleCountryChange}
                       value={selectedCountry}
                       className='w-100'
+                      styles={{
+                        control: (base, state) => ({
+                          ...base,
+                          borderColor: state.isFocused ? '#fb246a' : base.borderColor,
+                          boxShadow: state.isFocused ? '0 0 0 1px #fb246c4a' : base.boxShadow
+                        }),
+                      }}
                     />
+
                   </div>
                 </div>
               </div>
@@ -193,6 +201,13 @@ const Signup = () => {
                       value={selectedState}
                       isDisabled={!selectedCountry}
                       className='w-100'
+                      styles={{
+                        control: (base, state) => ({
+                          ...base,
+                          borderColor: state.isFocused ? '#fb246a' : base.borderColor,
+                          boxShadow: state.isFocused ? '0 0 0 1px #fb246c4a' : base.boxShadow
+                        }),
+                      }}
                     />
                   </div>
                 </div>
@@ -208,6 +223,13 @@ const Signup = () => {
                       onChange={(selected) => setSelectedCity(selected)}
                       value={selectedCity}
                       isDisabled={!selectedState}
+                      styles={{
+                        control: (base, state) => ({
+                          ...base,
+                          borderColor: state.isFocused ? '#fb246a' : base.borderColor,
+                          boxShadow: state.isFocused ? '0 0 0 1px #fb246c4a' : base.boxShadow
+                        }),
+                      }}
                     />
                   </div>
                 </div>
