@@ -3,8 +3,13 @@ body {
   background-color: #f9f1f0;
   overflow-x: hidden;
 }
+::selection {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
 :root{
     --text-color : #fb246a;
+    --text-color2 : #0056b3;
     --bg-color : #f9f1f0;
 }
 /* Home */
@@ -22,11 +27,11 @@ body {
 }
 
 /* Cards */
-.card{
-    border: 2px solid #e0e0e0;
+.custom-card{
+    /* border: 2px solid #e0e0e0; */
     transition: all 0.3s ease-in-out;
 }
-.card:hover{
+.custom-card:hover{
     box-shadow: 0px 4px 12px #fb246c4a !important;
     transform: scale(1.01);
     transition: all 0.3s ease-in-out;
@@ -53,6 +58,18 @@ body {
 
 .custom-btn:hover {
   background-color: var(--text-color);
+  color: white;
+  transform: scale(1.01);
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+.custom-btn2 {
+  color: var(--text-color2);
+  border: 1px solid var(--text-color2);
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+.custom-btn2:hover {
+  background-color: var(--text-color2);
   color: white;
   transform: scale(1.01);
   transition: background-color 0.3s, transform 0.3s, color 0.3s;

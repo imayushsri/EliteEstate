@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import OurValues from '../components/OurValues';
+import Testimonial from '../components/Testimonial';
 
 const About = () => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const About = () => {
       <div className="py-5">
         <div className="container">
           <h2 className="text-center fw-bold mb-4 display-6 text-color" data-aos="fade-up">
-            About Elite<span className='text-dark'>Estate</span>
+            <span className='text-dark'>About</span> Elite<span className='text-dark'>Estate</span>
           </h2>
           <p className="text-center mb-5 text-muted" data-aos="fade-up">
             Your trusted partner in finding the perfect property – for rent or sale.
@@ -83,6 +84,10 @@ const About = () => {
       </div>
 <div data-aos="fade-right">
       <OurValues />
+
+</div>
+<div data-aos="fade-right">
+      <Testimonial />
 
 </div>
     </div>

@@ -10,22 +10,31 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Signup from './pages/Signup';
 import Signin from './pages/Signin';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import AdminLogin from './pages/admin/AdminLogin';
+import AdminAddProperty from './pages/admin/AdminAddProperty';
 
 
 function App() {
 
   return (
     <BrowserRouter>
-    <Header/>
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/signin' element={<Signin />} />
-         <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<PageNotFound />} />
+
+        <Route path='/admin' element={<AdminLogin />} />
+
+        {/* Admin Pages */}
+        <Route path='/admin/dashboard' element={<AdminDashboard />} />
+        <Route path='/admin/add-property' element={<AdminAddProperty />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
 
   )
