@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function ListingItem({ listing }) {
   return (
-    <div className="card h-100 shadow border-0">
+    <div className="card h-100 custom-card shadow border-0">
       <Link to='#' className="text-decoration-none text-dark">
         <img
           src={

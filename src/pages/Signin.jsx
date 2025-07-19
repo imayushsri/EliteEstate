@@ -22,7 +22,7 @@ const Signin = () => {
       </h2>
       <div className='row justify-content-center'>
         <div className='col-lg-6' data-aos="fade-right">
-          <form className='bg-white shadow form rounded p-4 p-md-5'>
+          <form className='bg-white shadow form custom-card rounded p-4 p-md-5'>
             <div className='row g-3'>
 
               <div className='col-12'>
