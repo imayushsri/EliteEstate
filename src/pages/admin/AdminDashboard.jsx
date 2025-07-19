@@ -36,7 +36,7 @@ export default function AdminDashboard() {
   const [selectedProperty, setSelectedProperty] = useState(null);
 
 
-  const mainPink = '#fb246a';
+  const mainPink = '#ff5a3c';
   const mainBlue = '#0056b3';
   const pinkSoft = '#fb246a22';
   const blueSoft = '#0056b322';
