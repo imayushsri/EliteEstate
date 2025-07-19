@@ -71,7 +71,7 @@ export default function Testimonial() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className='card h-100 shadow border-0 p-4 text-center'>
+              <div className='card h-100 custom-card shadow border-0 p-4 text-center'>
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
